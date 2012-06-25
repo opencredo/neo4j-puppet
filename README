@@ -1,0 +1,5 @@
+neo
+
+This package provides a module to install Neo4j Graph Database Server
+
+Extract package to /etc/puppet and run puppet apply
