@@ -34,6 +34,11 @@ class neo::install {
 	user {
 		"${neo::params::neouser}":
 			ensure	=> present;
+	}
+	
+	group {
+		'puppet':
+			ensure	=> present;
 	}	
 
 }

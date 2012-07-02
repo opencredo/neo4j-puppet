@@ -3,7 +3,15 @@ neo
 This package provides a module to install Neo4j Graph Database Server
 
 USAGE
-Extract package to /etc/puppet and run puppet apply
+1. Download package
+1.1 wget https://github.com/jussiheinonen/neo4j-puppet/tarball/master
+2. Extract package 
+2.1 tar zxvf master
+2.2 mkdir -p /etc/puppet
+2.3 mv jussiheinonen-neo*/* /etc/puppet
+3. Apply Puppet manifests
+3.1 cd /etc/puppet/manifests
+3.1 puppet apply site.pp
 
 INSTALL PUPPET (requires Rubygems)
 1. gem install puppet --no-rdoc --no-ri
