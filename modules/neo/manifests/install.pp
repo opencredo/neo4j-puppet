@@ -6,7 +6,7 @@ class neo::install {
 	require neo::params
 	
 	package {
-		'default-jre':
+		"${neo::params::jreinstaller}":
 			ensure	=> installed;
 	}
 	

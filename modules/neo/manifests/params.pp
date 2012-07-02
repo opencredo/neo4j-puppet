@@ -1,5 +1,15 @@
 class neo::params {
 	
+	case $operatingsystem {
+		/(Ubuntu|Debian)/: {
+			$jreinstaller = 'default-jre'
+		}
+		/(RedHat|CentOS|Fedora)/: {
+			$jreinstaller = 'java-1.6.0-openjdk'
+		}
+	}
+	
+	
 	$tmpdir = '/tmp'
 	$baseurl = 'http://dist.neo4j.org'
 	#$baseurl = 'file:////mnt/localrepo'
