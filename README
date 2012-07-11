@@ -1,6 +1,15 @@
-neo
+NEO4J-PUPPET
 
-This package provides a module to install Neo4j Graph Database Server
+ABOUT
+This package provides a Puppet module to install Neo4j Graph Database Server.
+Module installs JRE from OpenJDK package instead of JRE distributed by Oracle.
+Neo4j version installed by default is Community Edition 1.7.2. 
+Version can be changed by editing the value of variable $neoversion in manifests/params.pp.
+
+SUPPORTED LINUX FLAVOURS
+Debian/Ubuntu, RedHat/Fedora
+
+Python bindings for Neo4j are included when deploying on Debian/Ubuntu.
 
 USAGE
 1. Download package
